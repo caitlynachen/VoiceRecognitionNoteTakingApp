@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Voice Controlled Notes App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="col-sm-6" class="voice">
+            <h1>Voice Controlled Notes App</h1>
+            <p class="page-description">Taking notes is no longer a hassle. You can now do it with ease by recording your voice.</p>
+
+            <h3 class="no-browser-support">Sorry, Your Browser Doesn't Support the Web Speech API. Try Opening This Demo In Google Chrome.</h3>
+
+            <div class="app"> 
+                <h3>Add New Note</h3>
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="Create a new note by typing or using voice recognition." rows="6" cols="50"></textarea>
+                </div>         
+                <button id="start-record-btn" title="Start Recording">Start Recording</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recording</button>
+                <div class="dark">
+                    <button class="dark" id="save-note-btn" title="Save Note">Save Note</button> 
+                    <button class="dark" id="save-as-doc-btn" title="Save Note" onclick="Export2Doc()">Download as a Word Document</button>
+                </div>
+                <p id="recording-instructions">Press the <strong>Start Recording</strong> button and allow access to start taking notes.</p>
+                <h3>My Notes</h3>
+                <ul id="notes">
+                    <li>
+                        <p class="no-notes">You don't have any notes.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6" class="google-doc">
+            <iframe src= "https://docs.google.com/document/d/15Kd6CMotLqOjoYbGA1Lhw3M7MbF-nNT02iYLg-ivXpY/edit?usp=sharing" width = "620px" height = "750px">
+            </iframe>
+            <iframe align = "middle" frameborder = "0" height = "220px" scrolling= "yes" src = "https://drive.google.com/embeddedfolderview?id=1qR_9SJJcLjHwEB3oXlpEXZlQV3vqdFOi"width = "620px" style="background: white;">
+            </iframe>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+        <!-- Only used for the demos ads. Please ignore and remove. --> 
+        <script src="https://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+
+    </body>
+</html>
+
+
+    </body>
+</html>
+
+
